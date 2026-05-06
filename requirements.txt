@@ -3,5 +3,4 @@ numpy
 pandas
 scikit-learn
 streamlit
-tensorflow==2.12.0
-keras==2.12.0
+
