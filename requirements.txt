@@ -1,7 +1,8 @@
-streamlit
+tensorflow
 pandas
 numpy
 scikit-learn
-keras
-h5py
-
+matplotlib
+seaborn
+tensorboard
+streamlit
