@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 import pandas as pd
 import pickle
-
+from tensorflow import keras
 # -------------------- PAGE CONFIG --------------------
 st.set_page_config(
     page_title="Churn AI",
@@ -37,7 +37,9 @@ h3 {
 """, unsafe_allow_html=True)
 
 # -------------------- LOAD MODEL --------------------
-model = tf.keras.models.load_model('model.h5')
+# model = tf.keras.models.load_model('model.h5')
+
+model = keras.models.load_model('model.keras')
 
 with open('label_encoder_gender.pkl', 'rb') as file:
     label_encoder_gender = pickle.load(file)
